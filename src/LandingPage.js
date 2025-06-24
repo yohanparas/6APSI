@@ -1,8 +1,16 @@
 // This is the Home Page of the project
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles/LandingPage.css';
 
 const LandingPage = () => {
+    const navigate = useNavigate(); 
+    
+    const handleLogin = () => {
+    // Redirect to home page after login
+    navigate('/login'); 
+    };
+
     return (
         <div className='landing-container'>
             {/* Main title */}
@@ -20,6 +28,11 @@ const LandingPage = () => {
                     </p>
                 </section>
             </main>
+
+            {/* Button */}
+            <footer style={{ textAlign: 'center', marginTop: '2rem' }}>
+                <button className='landing-button' onClick={handleLogin}>LOGIN</button>
+            </footer>
         </div>
     );
 };

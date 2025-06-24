@@ -10,7 +10,7 @@ function LoginPage() {
     // Authentication to be addded
 
     // Redirect to home page after login
-    navigate('/home'); 
+    navigate('/'); 
   };
  
   return (

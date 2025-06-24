@@ -30,3 +30,21 @@ body {
   font-size: 1.3rem;
   margin-bottom: 32px;
 }
+
+.landing-button {
+  background: linear-gradient(90deg, #b7c7a3 0%, #a3c585 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 36px;
+  margin-top: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(163, 197, 133, 0.13);
+  transition: background 0.2s;
+}
+
+.landing-button:hover {
+  background: linear-gradient(90deg, #a3c585 0%, #7ba05b 100%);
+}
