@@ -1,21 +1,35 @@
+// Main Login Page
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './styles/LoginPage.css';
 
 function LoginPage() {
+  const navigate = useNavigate(); 
+
+  const handleLogin = () => {
+    // Authentication to be addded
+
+    // Redirect to home page after login
+    navigate('/home'); 
+  };
  
   return (
-    <div>
-      <h2>Login</h2>
-      <input
+    // Login Page Container
+    <div className='login-container'>
+      <h2 className='login-title'>Login</h2>
+      <input className='login-input'
         type="text"
         placeholder="Username"
        
+      // Login Input fields
       /><br />
-      <input
+      <input className='login-input'
         type="password"
         placeholder="Password"
-     
-      /><br />
-      <button >Login</button>
+
+      // Login Button
+      /><br /> 
+      <button className='login-button' onClick={handleLogin}>Login</button>
     </div>
   );
 }
